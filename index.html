@@ -11,6 +11,8 @@
     <h1>Hello from HTML!</h1>
     <div id="app">
       <h1>{{ message }}</h1>
+      <div v-for:"movie in movies" :key="movie.id"></div>
+      <h2>{{ movie.title }}</h2>
     </div>
   </body>
 </html>
